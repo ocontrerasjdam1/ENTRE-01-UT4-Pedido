@@ -1,8 +1,9 @@
 
-
 /**
  *  Representa a un cliente que hace un pedido 
+ *  Oskar Contreras Junguitu
  */
+
 public class Cliente
 {
     private String nombre;
@@ -52,10 +53,13 @@ public class Cliente
      * representación textual del cliente
      */
     public String toString() {
-         
-          
+        return ( "Nombre %-10s" + "%10s" + nombre +  
+            "\nDireccion %-10s" + "%10s" + direccion +    
+            "\nCiudad %-10s" + "%10s" + ciudad +
+            "\nProvincia %-10s" + "%10s" + provincia);
+
     }
-    
+
     /**
      * 
      */

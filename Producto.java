@@ -1,5 +1,5 @@
 /**
- *  
+ *  Oskar Contreras
  * Modela un producto. Todo producto tiene un nombre y un  precio unidad 
  */
 public class Producto
@@ -28,12 +28,13 @@ public class Producto
     public double getPrecio() {
         return precio;
     }
-    
+
     /**
      * obtiene un nuevo producto copia idéntica del actual
      */
-    public         obtenerCopia() {
-         
+    public    Producto     obtenerCopia() {
+        Producto clonar = new Producto(this.nombre,this.precio);
+        return clonar;
     }
 
     /**
@@ -41,7 +42,7 @@ public class Producto
      * (ver enunciado)
      */
     public String toString() {
-        
+        return ("%30s" + nombre + "%2.2f" + precio + "€" + "unidad");
     }
 
 }
